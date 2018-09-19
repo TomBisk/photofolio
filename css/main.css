@@ -61,23 +61,22 @@ body {
 
 .header-nav__item {
 /*   margin: 1rem; */
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.2rem;
   background: #fff;
 }
-
 a {
   text-decoration: none;
-		font-weight: 700;
-
+	font-weight: 700;
 }
 
-a, a:visited {
-  color: #222;
+.header a, .header a:visited {
+  color: #444;
 }
 
-a:hover {
+.header a:hover {
   color: #000;
-  border
+  border-top: 2px solid #ff0000;
+  border-bottom: 2px solid #ff0000;
 }
 
 .main {
@@ -86,29 +85,48 @@ a:hover {
 
 .footer {
   display: flex;
+	justify-content: center;
   height: 8rem;
-  background: gray;
+	padding: 0 2rem;
+	color: #ccc;
+  background: #000;
+}
+
+.footer__copy {
+	flex-basis: 85%;
+	align-self: center;
+	text-align: center;
   font-size: 1.6rem;
 }
 
-.footer__social-links a {
+.footer__links {
+	display: flex;
+	margin-right: 4rem;
+	align-self: center;
+	flex-basis: 15%;
+	text-align: right;
+  font-size: 3rem;	
+}
+
+.footer__links a {
+	margin: 0.8rem;
   font-size: 3rem;
-  color: red;
+  color: #ccc;
   
 }
 
-.footer__social-links a:active {
-  color: red;
+.footer__links a:active {
+  color: #ccc;
 }
 
-.footer__social-links a:hover {
-  color: blue;
+.footer__links a:hover {
+  color: #ff0000;
 }
 
-.footer__social-links a:visited {
+.footer__links a:visited {
   color: ;
 }
 
-.footer__social-links i {
-  padding: 4px;
+.footer__links i {
+/*  padding: 4px;*/
 }
