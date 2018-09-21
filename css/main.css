@@ -79,10 +79,31 @@ a {
   border-bottom: 2px solid #ff0000;
 }
 
+/*	===== Main section =====	*/
 .main {
-  height: calc(100% - 18rem);
+  height: calc(100vh - 18rem);
 }
 
+.slider {
+/*  width: 100vw;  adjust width of slider */
+  height: 100%;
+  background: #eee;
+  position: relative;
+}
+
+.slider__item {
+  position: absolute;
+  transition: opacity 3s ease-in; /* adjust transition-duration (in seconds) */ 
+  width: 100%;
+/*	height: auto;*/
+}
+
+.slider__item--hidden {
+  opacity: 0;
+}
+
+
+/*	===== FOOTER =====	*/
 .footer {
   display: flex;
 	justify-content: center;
