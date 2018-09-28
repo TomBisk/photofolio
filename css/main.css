@@ -171,6 +171,40 @@ a {
 }
 
 
+@media screen and (min-width: 640px)
+							and (orientation: landscape) {
+		
+	.header {
+		flex-direction: row;
+		flex-basis: 7rem;
+	  min-height: 7rem;
+		padding: 0 1rem;
+	}
+								
+	.header__title {
+		padding-top: 0;
+	}
+	
+	.header-nav {
+		align-self: flex-end;
+	}
+								
+	.header-nav__item:last-child {
+		padding-right: 0;
+	}
+								
+	.footer__copy {
+		flex-basis: 85%;
+	}
+								
+	.footer__links {
+		flex-basis: 15%;
+		margin-right: 2rem;
+/*		align-self: center;*/
+	}
+}
+
+
 
 @media screen and (min-width: 1024px) {
 	
