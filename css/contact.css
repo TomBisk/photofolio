@@ -1,0 +1,31 @@
+/*	===== Main section =====	*/
+.main {
+	flex-basis: 100%;
+	width: 100%;
+	padding: 20px;
+}
+
+
+/* ===== MEDIA MIN-WIDTH 640px ===== */
+
+@media screen and (min-width: 640px)
+							and (orientation: landscape) {
+		
+
+
+}
+
+/* ===== MEDIA MIN-WIDTH 768px ===== */
+
+@media screen and (min-width: 768px) {
+	
+	
+}
+
+
+/* ===== MEDIA MIN-WIDTH 1024px ===== */
+
+@media screen and (min-width: 1024px) {
+	
+	
+}
