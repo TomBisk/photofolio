@@ -96,16 +96,17 @@ a {
 
 .slider__item {
   position: absolute;
-  transition: opacity 3s ease-in; /* adjust transition-duration (in seconds) */ 
+  transition: opacity 2s ease-in; /* adjust transition-duration (in seconds) */ 
   width: 100%;
 	max-width: 1050px;
 	height: auto;
 	margin: 0 auto;
 }
 
-.slider__item--hidden {
+.hidden {
   opacity: 0;
 }
+/*.slider__item--hidden*/
 
 
 /*	===== FOOTER =====	*/

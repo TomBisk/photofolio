@@ -5,18 +5,19 @@
  * appropriate css class for each slide, in set time interval.
  */
 
-const slides = document.querySelectorAll(".slider__item");
-let counter = slides.length - 1;
+const slides = document.querySelectorAll('.slider__item');
+let counter = slides.length;
 
 function slider() {
-  slides[counter].classList.toggle("slider__item--hidden");
   counter--;
-  if (counter < 0) {
-    counter = slides.length - 1;
-    for (i = slides.length -1; i >= 0; i--) {
-      slides[i].classList.toggle("slider__item--hidden");
-    }
+  if (counter >= 1) {
+  slides[counter-1].classList.toggle('hidden');
+  slides[counter].classList.toggle('hidden');
+  } else {
+    counter = slides.length;
+    slides[counter-1].classList.toggle('hidden');
+    slides[0].classList.toggle('hidden');
   }
-}
+ }
 
-setInterval(slider, 9000); // adjust time interval  to change slide (in milliseconds)
+setInterval(slider, 6000); // adjust time interval  to change slide (in milliseconds)
